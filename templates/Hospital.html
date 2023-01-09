@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+      {% block content %}
+      <h1> Supplier Page </h1>
+      <p> Put Something About Your App Here: </p>
+      <p> And Here.... </p>
+      <script>
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        var element = document.getElementById("supplier-tab");
+        element.classList.add("active");
+      </script>
+      {% endblock %}
